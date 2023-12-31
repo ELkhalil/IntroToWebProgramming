@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Abderrahman elkhalil" />
+    <meta name="description" content="this just a test demo website to check my knowledge..." />
+    <meta name="keywords" content="HTML, CSS, JAVASCRIPT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Some Common meta used cases -->
+    <!--  30s until the page should be reloaded -->
+        <!-- <meta http-equiv="refresh" content="30" /> -->
+    <!-- redirect to a defined page after a number of seconds (3s) -->
+        <!-- <meta http-equiv="refresh" content="3;url=https://www.google.com" /> -->
+    <!-- used for content securioty policy -->
+        <!-- <meta http-equiv="content-security-policy" content="script-src 'self'; object-src 'none'" /> -->
+    
+    <title>Learning HTML</title>
+</head>
+<body>
+    <h1>
+        Hello world! <a href="https://www.github.com">click me</a>
+    </h1>
+    <p> 
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti veritatis, 
+        nihil magnam voluptas et doloribus cupiditate iste. Velit fugit commodi voluptatem doloribus voluptatibus, 
+        earum reprehenderit, dolorem, est corporis fugiat illo.
+    </p>
+    <p> 
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti veritatis, 
+        nihil magnam voluptas et doloribus cupiditate iste. Velit fugit commodi voluptatem doloribus voluptatibus, 
+        <strong>earum reprehenderit, dolorem, est corporis fugiat illo.</strong>
+    </p>
+    <img src="./images/test.jpeg" alt="a test image to show a wallpaper">
+    <h2> another image variants </h2>
+    <!-- Using pixel density -->
+    <img 
+        srcset="./images/test.jpeg 4x,
+                ./images/test.jpeg 3x,
+                ./images/test.jpeg 2x,
+                ./images/test.jpeg 1x"
+        src="./images/test.jpeg"
+    />
+    <!-- <img 
+        srcset="./images/test1.jpeg 3200w,
+                ./images/test2.jpeg 2400w,
+                ./images/test3.jpeg 2120w,
+                ./images/test4.jpeg 300w"
+        src="./images/test.jpeg"
+    /> -->
+    <!--Practice of diffrent types of lists in HTML-->
+    <!-- Unordered list -->
+    <h3> Unordered list: </h3>
+    <ul>
+        <li> Orange </li>
+        <li> Apple </li>
+        <li> Watermelon </li>
+    </ul>
+    <!-- Ordered list -->
+    <h3> most used devices: </h3>
+    <ol type="a">
+        <li> Macbook pro </li>
+        <li> Dell xps </li>
+        <li> Asus rog strix </li>
+    </ol>
+    <h3> Description list: </h3>
+    <dl>
+        <dt>Name</dt>
+        <dd>Abdo</dd>
+        <dt>Age</dt>
+        <dd>27</dd>
+        <dt>Profession</dt>
+        <dd>Software developer</dd>
+    </dl>
+    <h2>Nested Lists: </h2>
+    <ul>
+        Langueges:
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </ul>
+    <ul>
+        Frameworks:
+        <ul>
+            <li>Reactjs</li>
+            <li>Flutter</li>
+        </ul>
+    </ul>
+    <ul>
+        Languegs:
+        <ul>
+            <li>Reactjs</li>
+            <li>Flutter</li>
+        </ul>
+    </ul>
+    <!-- Tables in HTML -->
+    <h2>Example of a table</h2>
+    <table >
+        <!--The first one is reserved to serve the titles using th(table header)-->
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr>
+            <td>abderrahman</td>
+            <td>elkhalil</td>
+        </tr>
+        <tr>
+            <td>omar</td>
+            <td>elkhalil</td>
+        </tr>
+    </table>
+    <h2>#5 Table Data Cell "colspan" attribute</h2>
+     <!--Colspan to adabt the table over the data and celss-->
+    <table >
+        <tr>
+            <th colspan="2">Full Name</th>
+        </tr>
+        <tr>
+            <td>abderrahman elkhalil</td>
+            <td>mehdi elkhalil</td>
+        </tr>
+    </table>
+    <h2>#6 Table Data Cell "rowspan" Attribute</h2>
+     <!--Colspan to adabt the table over the data and celss-->
+    <table >
+        <tr>
+            <th >Full Name</th>
+            <th >Age</th>
+        </tr>
+        <tr>
+            <td>abderrahman</td>
+            <td rowspan="2">27</td>
+        </tr>
+        <tr>
+            <td>mehdi</td>
+        </tr>
+    </table>
+    <!-- Accessibility helpers -->
+    <table >
+        <caption>
+            title of the table
+        </caption>
+        <!-- it help the people who use reading to know the head and body of the table -->
+       <thead>
+            <tr>
+                <th >Full Name</th>
+                <th >Age</th>
+            </tr>
+        </thead>
+        <!-- we can have multiple tbody -->
+        <tbody>
+            <tr>
+                <td>abderrahman</td>
+                <td rowspan="2">27</td>
+            </tr>
+            <tr>
+                <td>mehdi</td>
+            </tr>
+        </tbody>
+        <!-- we can have a footer for our table like results or anything that gives a resume-->
+        <tfoot>
+            <tr> 
+                <th>Total</th>
+                <td>9.2</td>
+                <td>552</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
