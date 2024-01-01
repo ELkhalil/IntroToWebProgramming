@@ -291,3 +291,51 @@ Introduction To Web Programming
     defines where (Server) the data gets sent
     value: Valid Absolute URL
   
+2 - CSS (Cascading Style Sheets)
+---------------------------------
+    as we finished talking about HTML witch is the structure and the base of our website pages we are now ready to 
+    take care of the view of our pages.
+    CSS take care of the following:
+      it consist of the 
+        Layout: laying out elements in a pre defined and ruled way
+        fonts: upload the fonts and take case of the texts
+        colors of course to bring life to the page.
+    - presentation of a page
+    - differente devices adaption
+    - independent from HTML
+    - ease of maintanability: once there us an issue you can easily identify it by checking if it is from presentation or structure
+    - structure separation
+  # to disable a design from a page to check it's structure use:
+    https://chromewebstore.google.com/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=fr
+  #5 CSS Snapshots & Modules
+  -----------------------------
+  CSS Snapshots and CSS Modules are terms related to web development:
+    1. **CSS Snapshots:** There isn't a widely recognized term "CSS Snapshots" in the context of web development.
+    It's possible you may be referring to capturing or saving a snapshot of the current state of CSS styles in a particular moment.
+    2. **CSS Modules:** CSS Modules refer to a modular approach in web development where styles are scoped locally to a component or module.
+    This helps in avoiding global style conflicts and enhances code maintainability. It involves techniques like scoped CSS and local identifiers.
+  #8 CSS Standardization - Which Module to use in your Code Base?
+  ----------------------------------------------------------------
+  WD: Working Drafc when you see a module with this state it means it is not stable.
+  CR: Candidat Recommendation
+  PR: proposed Recommendation
+  REC: recommendation
+  |------------------------------------------------------------------------------------------------|
+  | i loved the content shared by a youtube channel:                                               |
+  |   https://www.youtube.com/watch?v=SqNsT16yYpw&list=PLyMSoUmH8WzDaQBKdkO7tlOe8SU5_5dSA&index=10 |
+  |     he uses:                                                                                   |
+  |       - Screen Recording: Screenflow                                                           |     
+  |       - Writing on the screen: Screen Brush                                                    |
+  |       - Slides: Keynote                                                                        |
+  |------------------------------------------------------------------------------------------------|
+
+
+
+
+
+
+
+
+
+
+
