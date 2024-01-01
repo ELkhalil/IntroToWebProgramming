@@ -1,0 +1,67 @@
+/*  Making a Global font design for our website it will be the default one and every tag will inherit it (some won't like urls...) */
+
+body {
+    font-family: "Alaska", Times, serif, sans-serif; /* depends if the user have it in his machine */
+    font-size: 1.5rem; /* 18px use a rem unit better than px like this: 1rem */ 
+    font-weight: 400; /* changing the bolding of the font it helps 100= very light 900=very bold and play between them*/
+    font-style: normal; /* italic oblique or regular ...*/
+    color: blue; /* why not it is font-color ? no idea use it as it is hhh */
+    line-height: 1.7; /*this means 1.5 bigger than the font-size */
+    text-align: center; /* by default it is aligned left */  
+}
+
+/* 
+    if we dont want to rely on inheritance we can speicify a style for every tag 
+*/
+
+header {
+    text-align: center;
+    text-transform: uppercase; /* or make it lowercase or capitalize that target all the first alphabet of a word */
+    color: purple;
+}
+
+a {
+    color: green; /* to change the link colors to green */
+    text-decoration: none; /* to remove the default subline under a link */
+}
+
+h1 {
+    font-weight: 400; 
+    font-size: 5rem;
+}
+h2 {
+    line-height: 1.1;
+}
+
+ul {
+    color: purple;
+}
+
+/* for layout elements try this */
+/* start with learning grids once uv done go to flex boxes... */
+
+.columns {
+    display: grid; /* to display a grid template */
+    gap: 1em; /* to put a space between them */
+    grid-template-columns: 1fr 1fr 1fr; /* fraction of the space */
+}
+
+/*
+    please try to separate the layout style from the content style keep them separated and do not controle 
+    the content from the layout it is much more professional and good to go.
+*/
+
+
+/* controle responsive */
+
+@media screen and (max-width:400px) {
+    /* this design will be applied only if the screen is smaller than 400px */
+}
+@media screen and (min-width:401px) and (max-width:800px) {
+    /* this design will be applied only if the screen is bigger than 401px and less than 800 */
+}
+
+
+
+
+

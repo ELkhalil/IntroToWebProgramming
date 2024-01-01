@@ -291,6 +291,10 @@ Introduction To Web Programming
     defines where (Server) the data gets sent
     value: Valid Absolute URL
   
+  /*
+    use ids to link elements and keep the style to using classes only.
+  */
+
 2 - CSS (Cascading Style Sheets)
 ---------------------------------
     as we finished talking about HTML witch is the structure and the base of our website pages we are now ready to 
