@@ -1,0 +1,73 @@
+The CSS Box Model:
+In CSS, the term "box model" is used when talking about design and layout.
+
+The CSS box model is essentially a box that wraps around every HTML element. 
+It consists of: content, padding, borders and margins. The image below illustrates the box model:
+
+    ---------------
+    |    Margin    |
+    ---------------
+    |    Border    |
+    ---------------
+    |    Padding   |
+    ---------------
+    |    Content   |
+
+Explanation of the different parts:
+
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+
+# When plaicing element you should alwayd use FlexBox instead of absolute position
+    CSS Flexbox Layout Module
+    Before the Flexbox Layout module, there were four layout modes:
+
+    Block, for sections in a webpage
+    Inline, for text
+    Table, for two-dimensional table data
+    Positioned, for explicit position of an element
+    The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+# the key to understand flexbox is the parent child relationship
+.parent {
+    display: flex;
+    flex-direction: 'row' | 'row-reverse' | ... (more);
+    flex-wrap: 'nowrap' | wrap | 'wrap-reverse';
+    flex-flow: [flex-direction and flex-wrap values];
+    justify-content: 'flex-start' | 'flex-end' | ... (more);
+    align-items: 'stretch' | 'flex-start' | .. (more);
+    align-content: 'stretch' | 'flex-start' | ... (more);
+}    
+
+# the key ones are:
+.parent {
+    display: flex;
+    justify-content: 'flex-start' | 'flex-end' | ... (more);
+    align-items: 'stretch' | 'flex-start' | .. (more);
+}
+ check this fore more : https://yoksel.github.io/flex-cheatsheet/#section-order
+
+# flex is good for some situations when we have one dimention if it is horizontal or vertical
+    but not that good for something that is more like a gallery of itemrs or of products...
+    the pretiest and easier way is to use grid for that.
+
+--> Grid:
+.parent {
+    display: grid;
+    gridTemplateColumns: repeat(12, 1fr);
+    gridAutoRows: 150px;
+    gap: 20px;
+}
+
+if the flex or the grid does not solve ur issue it is time to go with absolute and relative positioning
+specially when dealing with special elements that are in a very special display
+
+.parent {
+    position = absolute;
+    display
+    bottom: 10%
+    left 100%
+    width 100%
+    padding 0 5%
+}
